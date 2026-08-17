@@ -39,6 +39,11 @@ export const project = {
   tokenHolders: 3904,
   logoArtId: "parallel-logo",
   bannerArtId: "parallel-banner",
+  videos: {
+    hero: "/media/accc-6.mp4",
+    collection: "/media/accc-2.mp4",
+    mint: "/media/accc-5.mp4",
+  },
   links: {
     website: "https://example.com",
     x: "https://x.com",

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Atmosphere } from "@/components/art/Atmosphere";
+import { ProjectVideo } from "@/components/art/ProjectVideo";
 import { Badge } from "@/components/ui/Badge";
 import { useHoldings } from "@/lib/useHoldings";
 import { formatEth } from "@/lib/format";
@@ -31,7 +32,11 @@ export function DropCard({ drop }: { drop: Drop }) {
       href={mintPath(drop.id)}
       className="overflow-hidden rounded-lg border border-border bg-surface-1 hover:border-[#3a4440]"
     >
-      <Atmosphere id={drop.artId} className="aspect-[16/10]" rounded="rounded-none" />
+      {drop.video ? (
+        <ProjectVideo src={drop.video} className="aspect-[16/10]" rounded="rounded-none" />
+      ) : (
+        <Atmosphere id={drop.artId} className="aspect-[16/10]" rounded="rounded-none" />
+      )}
       <div className="space-y-3 p-4">
         <div className="flex items-start justify-between gap-2">
           <h3 className="font-semibold">{drop.name}</h3>

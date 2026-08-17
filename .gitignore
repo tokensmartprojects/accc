@@ -47,5 +47,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local ACCC videos exceed GitHub's 100MB file limit
-*.mp4
+# original 4K masters (too large for GitHub)
+/public/2ACCC!!.mp4
+/public/5ACCC!!.mp4
+/public/6ACCC!!.mp4

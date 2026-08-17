@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useAccount } from "wagmi";
-import { Atmosphere } from "@/components/art/Atmosphere";
+import { ProjectVideo } from "@/components/art/ProjectVideo";
 import {
   TransactionModal,
   useMockTransaction,
@@ -101,8 +101,8 @@ export function DropView({ drop }: { drop: Drop }) {
           <h1 className="text-[32px] font-semibold leading-10">{drop.name}</h1>
           <Badge tone={statusTone[drop.status]}>{statusLabel[drop.status]}</Badge>
         </div>
-        <Atmosphere
-          id={drop.artId}
+        <ProjectVideo
+          src={drop.video ?? project.videos.mint}
           className="mt-6 aspect-[16/10] w-full"
           rounded="rounded-lg"
         />

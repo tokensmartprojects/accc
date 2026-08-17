@@ -11,6 +11,7 @@ export const drops: Drop[] = [
     minted: 6821,
     maxPerWallet: project.maxPerWallet,
     artId: "wanderer-775",
+    video: project.videos.mint,
     includes: {
       nftLabel: `1 ${project.nftPrefix} NFT`,
       nftAccount: true,
@@ -28,6 +29,7 @@ export const drops: Drop[] = [
     maxPerWallet: 3,
     startsAt: "Sep 2, 2026",
     artId: "wanderer-8812",
+    video: project.videos.hero,
     includes: {
       nftLabel: `1 ${project.nftPrefix} NFT`,
       nftAccount: true,
@@ -44,6 +46,7 @@ export const drops: Drop[] = [
     minted: 500,
     maxPerWallet: 2,
     artId: "gate-12",
+    video: project.videos.collection,
     includes: {
       nftLabel: `1 ${project.nftPrefix} NFT`,
       nftAccount: true,

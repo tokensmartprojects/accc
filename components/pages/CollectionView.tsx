@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Atmosphere } from "@/components/art/Atmosphere";
+import { ProjectVideo } from "@/components/art/ProjectVideo";
 import { NFTCard } from "@/components/cards/NFTCard";
 import { AddressDisplay } from "@/components/ui/AddressDisplay";
 import { Badge, VerifiedBadge } from "@/components/ui/Badge";
@@ -35,8 +36,8 @@ export function CollectionView() {
 
   return (
     <div>
-      <Atmosphere
-        id={project.bannerArtId}
+      <ProjectVideo
+        src={project.videos.collection}
         className="h-48 w-full md:h-64"
         rounded="rounded-[10px]"
       />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Atmosphere } from "@/components/art/Atmosphere";
+import { ProjectVideo } from "@/components/art/ProjectVideo";
 import { NFTCard } from "@/components/cards/NFTCard";
 import { Button } from "@/components/ui/Button";
 import { listedNfts } from "@/lib/data/catalog";
@@ -12,8 +12,8 @@ export default function HomePage() {
   return (
     <div className="space-y-16">
       <section className="relative overflow-hidden rounded-[10px] border border-border">
-        <Atmosphere
-          id={project.bannerArtId}
+        <ProjectVideo
+          src={project.videos.hero}
           className="h-[280px] md:h-[360px]"
           rounded="rounded-none"
         />

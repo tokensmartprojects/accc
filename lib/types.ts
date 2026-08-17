@@ -124,6 +124,7 @@ export type Drop = {
   maxPerWallet: number;
   startsAt?: string;
   artId: string;
+  video?: string;
   includes: {
     nftLabel: string;
     nftAccount: boolean;
