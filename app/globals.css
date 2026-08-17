@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #080a09;
+  --surface-1: #0d100f;
+  --surface-2: #121614;
+  --surface-3: #181d1a;
+  --border: #262c29;
+  --border-subtle: #1a1f1c;
+  --text-primary: #f4f6f5;
+  --text-secondary: #a5aca8;
+  --text-muted: #727a75;
+  --text-disabled: #505652;
+  --forge-green: #65e65f;
+  --forge-green-bright: #79f273;
+  --forge-green-dark: #3fb849;
+  --forge-green-muted: #274d2b;
+  --error: #f05d5e;
+  --warning: #f2b84b;
+  --info: #5ca8ff;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-modal: 12px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-disabled: var(--text-disabled);
+  --color-forge-green: var(--forge-green);
+  --color-forge-green-bright: var(--forge-green-bright);
+  --color-forge-green-dark: var(--forge-green-dark);
+  --color-forge-green-muted: var(--forge-green-muted);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --font-sans: var(--font-inter);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--forge-green-muted);
+  color: var(--text-primary);
+}

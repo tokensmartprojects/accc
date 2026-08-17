@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.123.0/config-schema.json",
+  "name": "accc",
+  "compatibility_date": "2026-08-16",
+  "preview_urls": true,
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
